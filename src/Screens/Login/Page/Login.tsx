@@ -19,6 +19,7 @@ const Login = () => {
       console.log(response.data); // Assuming backend sends a JWT token
       console.log("token", response.data.token);
       let token = response.data.token;
+      navigate("/home");
       // Optionally, you can store the token in localStorage or sessionStorage
       // and redirect the user to another page upon successful login
       if (token) {
