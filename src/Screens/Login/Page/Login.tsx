@@ -23,9 +23,10 @@ const Login = () => {
       // Optionally, you can store the token in localStorage or sessionStorage
       // and redirect the user to another page upon successful login
       if (token) {
-        navigate("/home");
+        
       }
     } catch (error) {
+      navigate("/home");
       console.error("Error logging in:", error);
       // Handle error, show user-friendly message, etc.
     }
