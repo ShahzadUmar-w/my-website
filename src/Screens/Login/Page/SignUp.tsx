@@ -11,7 +11,7 @@ const Signup = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/auth/login", // Adjusted path
+        "http://localhost:5000/api/auth/signup", // Adjusted path
         {
           email,
           password,
