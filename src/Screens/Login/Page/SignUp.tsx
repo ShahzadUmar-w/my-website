@@ -11,7 +11,7 @@ const Signup = () => {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "https://server-k8c8e6yr7-shahzad-umars-projects.vercel.app/auth/signup", // Adjusted path
+        "http://localhost:5000/api/auth/login", // Adjusted path
         {
           email,
           password,
